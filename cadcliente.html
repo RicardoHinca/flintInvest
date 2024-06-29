@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro Cliente</title>
+</head>
+<body>
+    <header class="header">
+        <p>Cadastro de Cliente</p>
+    </header>
+    
+        <form method="POST" action="blablabla.php">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <label>
+                        Primeiro Nome: <br>
+                        <input type="text" name="name" required/> <br/>
+                    </label>
+    
+                    <label>
+                        Sobrenome: <br/>
+                        <input type="text" name="lastname" required/><br/>
+                    </label>
+    
+                    <label>
+                        Email: <br/>
+                        <input type="text" name="email" required pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$" title="Endereço de Email Invalido"/><br/>
+                    </label>
+    
+                    <label>
+                        CPF: <br/>
+                <input type="number" name="age" step="11"/><br/>
+                    <!--STEP para numerais ele vai passar sempre de 2 em 2 numeros... ou pelo qual voce selecionou no momento-->
+                <input type="number" name="age" max="30" min="18" /><br/>
+                    <!--MIN / MAX limita qual a numeracao que pode ser colocado dentro do campo -->
+            </label>
+            
+        </fieldset>
+    
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa: <br/>
+                <input type="text" name="companyname" /><br/>
+            </label>
+    
+            <label>
+                Cargo da Empresa: <br/>
+                <input type="text" name="companyjobtitle" /><br/>
+            </label>
+        </fieldset>
+    
+        <input type="submit" value="Cadastrar" />
+    </form>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p><h3>Area de Cadastro</h3></p>
+    <form action="paginas/loguin.html" method="get"> -->
+        <!--FORM usado apra criar formularios de loguin cadastro etc com html e css
+        e apenas para criar os para enviar e salvar tem q usar outras tec-->
+        <!--ACTION usado para redirecionar as informacoes para a pagina onde sera
+        salvo os dados -->
+        <!--GET ele vai pegar os dados dos campos e enviar visualmente, ja o metodo
+        POST as informacoes sao enviadas internamentes ocultas -->        
+    <!-- </form>
+
+<p><h3>Aula #8 e #9 Imputs do HTML</h3></p>
+
+<p><h3>Area de Loguin</h3></p>
+    <form action="paginas/loguin.html" method="get">
+
+        Digite seu Usuario:<br/><input type="text" name="usuario"/><br/> -->
+            <!--INPUT criamos para poder criar e digitar coisas dentro dos form-->
+            <!--TYPE cria o campo vazio para vc digitar usuario por ex-->
+            <!--EMAIL no tipo, ele obriga a colocar um @ no lugar do text-->
+            <!-- NAME importante para todos os campos pois usa internamente-->
+       <!-- Digite sua Senha:<br/> <input type="password" value="123"/><br/> -->
+            <!--PASSWORD cria o campo vazio para vc digitar senha, oculta caract-->
+            <!--VALUE os valores ou informacoes que vai aparecer nos campos-->
+        <!-- <input type="checkbox" />Aceita os Termos Acima<br/> -->
+            <!--CHECKBOX cria o campo de checkbox -->
+        <!-- <input type="radio" name="sexo" />Masculino<br/> -->
+            <!--RADIO cria o campo de selecao por exemplo masculino e feminino-->
+        <!-- <input type="radio" name="sexo" />Feminino<br/> -->
+            <!--RADIO tem que ter pelo menos 2 itens com o mesmo nome/grupo -->
+        <!-- <input type="submit"/><br/> -->
+            <!--SUBMIT e o botao de envio do seu formulario -->
+        <!-- <input type="color"/><br/> -->
+            <!--COLOR abre uma caixa de cor para selecionar apenas navegador novo-->
+        <!-- Data de nascimento:<br/><input type="date"/><br/><br/> -->
+            <!--DATE abre uma caixa de calendario para vc selecionar-->
+        <!-- Qual horario da consulta:<br/><input type="datetime-local"/><br/> -->
+            <!--DATETIME-LOCAL abre uma caixa de calendario e hora-->
+        <!-- <input type="month"/><br/> -->
+            <!--MONTH mes selecionado-->
+        <!-- <input type="number"/><br/> -->
+            <!--NUMBER campo para digitar um numero -->
+        <!-- <input type="range"/><br/> -->
+            <!--RANGE para vc escolher entre 0 a 100% barrinha -->
+        <!-- <input type="search"/><br/> -->
+            <!--SEARCH para pesquisar algo dentro do campo-->
+        <!-- <input type="tel"/><br/> -->
+            <!--TEL digita um numero de telefone-->
+            <!--TIME digita uma hora-->
+            <!--URL digita um endereço de site-->
+            <!--WEEK seleciona uma semana cheia do calendario-->
+    <!-- </form>
+
+<p><h3>Aula #10 Select no HTML</h3></p>
+
+<p><h3>Area de Cadastro de Select</h3></p>
+    <form action="paginas/loguin.html" method="get">
+       
+        <select name="order"> -->
+            <!--SELECT abre um campo com as opcoes a serem escolhidas na pagina-->
+            <!-- <option>Mais Vendidos</option> -->
+                <!--OPTION para criar as opcoes dentro do select-->
+                <!--tem 2 formas de utilizar, oque o usuario vê e oque envia no html-->
+            <!-- <option value="last">Recentes</option> -->
+                <!--se colocar VALUE no option é oq aparece no html -->
+            <!-- <option selected="Masculino">Masculino</option> -->
+                <!--SELECTED marca qual e o campo que vai aparecer por primeiro na selecao-->
+            <!-- <option>Feminino</option>
+        </select><br/>
+
+        <select name="order" size="2" multiple> -->
+            <!--size e multiple para escolher mais de uma resposta no select-->
+            <!-- <option>Mais Vendidos</option>
+            <option value="last">Recentes</option>
+            <option selected="Masculino">Masculino</option>
+            <option>Feminino</option>
+        </select>
+
+        <input type="submit"/>
+    </form> -->
